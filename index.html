@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Cotización</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Cotización</h1>
+    </header>
+    <main>
+        <section id="product-list">
+            <h2>Productos y Servicios</h2>
+            <div id="products-container"></div>
+        </section>
+        <section id="quote-section">
+            <h2>Tu Cotización</h2>
+            <form id="quote-form">
+                <label for="product-select">Selecciona un producto:</label>
+                <select id="product-select" required></select>
+
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" min="1" value="1" required>
+
+                <button type="submit">Calcular Cotización</button>
+            </form>
+            <div id="quote-result"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
